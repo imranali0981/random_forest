@@ -16,12 +16,9 @@ app = FastAPI()
 def run_training_and_predict():
     print("Starting the prediction process...")
     try:
-        # Step 1: Train the model
-        print("Training the model...")
-        # subprocess.run(["python", "randomforest/train_model.py"], check=True)
-        print("Model training completed....")
-        print("Predicting plantation need...")
-
+        # training already completed
+        print("Training already completed.")
+        print("Running the prediction function...")
         # Step 2: Predict and get results
         result = predict_plantation_need()
 
